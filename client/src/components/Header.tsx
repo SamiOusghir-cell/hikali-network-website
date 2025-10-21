@@ -12,7 +12,7 @@ export default function Header() {
       setScrolled(window.scrollY > 50);
       
       // Actualizar sección activa
-      const sections = ['inicio', 'caracteristicas', 'modalidades', 'reportes', 'comunidad'];
+      const sections = ['inicio', 'caracteristicas', 'modalidades', 'novedades', 'comunidad'];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -41,7 +41,7 @@ export default function Header() {
     { id: 'inicio', label: 'Inicio' },
     { id: 'caracteristicas', label: 'Características' },
     { id: 'modalidades', label: 'Modalidades' },
-    { id: 'reportes', label: 'Reportes' },
+    { id: 'novedades', label: 'Novedades' },
     { id: 'comunidad', label: 'Comunidad' },
   ];
 

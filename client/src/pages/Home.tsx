@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import HeroSection from '@/components/sections/HeroSection';
 import FeaturesSection from '@/components/sections/FeaturesSection';
 import GameModesSection from '@/components/sections/GameModesSection';
-import ReportsSection from '@/components/sections/ReportsSection';
+import NewsSection from '@/components/sections/NewsSection';
 import CommunitySection from '@/components/sections/CommunitySection';
 import { useKonamiCode } from '@/hooks/useKonamiCode';
 import { Button } from '@/components/ui/button';
@@ -71,7 +71,7 @@ export default function Home() {
         <HeroSection />
         <FeaturesSection />
         <GameModesSection />
-        <ReportsSection />
+        <NewsSection />
         <CommunitySection />
       </main>
 
