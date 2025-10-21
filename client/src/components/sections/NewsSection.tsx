@@ -13,22 +13,6 @@ export default function NewsSection() {
       image: '/new-logo.webp',
       featured: true,
     },
-    {
-      icon: <Megaphone className="h-6 w-6 text-primary" />,
-      title: 'Evento de Temporada',
-      date: '15 de Septiembre, 2025',
-      category: 'Evento',
-      description: 'Participa en nuestro evento especial de otoño con recompensas exclusivas, desafíos únicos y premios increíbles para toda la comunidad.',
-      featured: false,
-    },
-    {
-      icon: <Calendar className="h-6 w-6 text-primary" />,
-      title: 'Actualización OneBlock',
-      date: '1 de Septiembre, 2025',
-      category: 'Modalidad',
-      description: 'Nuevas fases, bloques especiales y mecánicas mejoradas en OneBlock. ¡La experiencia más completa hasta ahora!',
-      featured: false,
-    },
   ];
 
   return (
