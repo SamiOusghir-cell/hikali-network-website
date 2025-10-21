@@ -32,7 +32,7 @@ export default function NewsSection() {
             <Card 
               key={index}
               className={`overflow-hidden border-2 transition-all duration-300 hover:shadow-japanese animate-in fade-in slide-in-from-bottom-5 ${
-                item.featured ? 'border-primary/50 bg-gradient-to-br from-pink-50/50 to-purple-50/50' : 'hover:border-primary/30'
+                item.featured ? 'border-primary/50 bg-gradient-to-br from-gray-50 to-slate-50' : 'hover:border-primary/30'
               }`}
               style={{ animationDelay: `${index * 100}ms` }}
             >

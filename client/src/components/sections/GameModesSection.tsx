@@ -48,7 +48,7 @@ export default function GameModesSection() {
   ];
 
   return (
-    <section id="modalidades" className="py-20 bg-gradient-to-br from-pink-50 to-purple-50">
+    <section id="modalidades" className="py-20 bg-gradient-to-br from-gray-50 to-slate-100">
       <div className="container">
         <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-5 duration-700">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">

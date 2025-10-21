@@ -7,7 +7,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gradient-to-br from-pink-50 to-purple-50 border-t">
+    <footer className="bg-gradient-to-br from-gray-50 to-slate-100 border-t">
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo y descripción */}

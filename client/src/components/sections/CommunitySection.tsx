@@ -17,7 +17,7 @@ export default function CommunitySection() {
   ];
 
   return (
-    <section id="comunidad" className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 relative overflow-hidden">
+    <section id="comunidad" className="py-20 bg-gradient-to-br from-slate-50 via-gray-100 to-zinc-100 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-10 right-10 text-6xl opacity-10 animate-float">🌸</div>
       <div className="absolute bottom-10 left-10 text-6xl opacity-10 animate-float" style={{ animationDelay: '1s' }}>🎋</div>
