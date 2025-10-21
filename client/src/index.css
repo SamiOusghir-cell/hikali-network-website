@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -43,39 +44,48 @@
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
+  /* Colores japoneses personalizados */
+  --sakura-pink: #FFB7C5;
+  --sakura-dark: #FF69B4;
+  --indigo: #4B0082;
+  --gold: #FFD700;
+  --dark-wood: #3E2723;
+  --light-bg: #FFF8F0;
+  --accent-red: #DC143C;
+  
+  --primary: oklch(0.7 0.2 350);
+  --primary-foreground: oklch(0.98 0 0);
+  --sidebar-primary: oklch(0.65 0.18 350);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --chart-1: oklch(0.7 0.2 350);
+  --chart-2: oklch(0.65 0.15 20);
+  --chart-3: oklch(0.6 0.18 280);
+  --chart-4: oklch(0.75 0.15 60);
+  --chart-5: oklch(0.55 0.2 350);
   --radius: 0.65rem;
-  --background: oklch(1 0 0);
+  --background: oklch(0.99 0.005 30);
   --foreground: oklch(0.235 0.015 65);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.235 0.015 65);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
+  --secondary: oklch(0.98 0.01 350);
   --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
+  --muted: oklch(0.967 0.01 350);
   --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
+  --accent: oklch(0.967 0.01 350);
   --accent-foreground: oklch(0.141 0.005 285.823);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(0.92 0.004 286.32);
   --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
+  --ring: oklch(0.7 0.2 350);
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
+  --sidebar-accent: oklch(0.967 0.01 350);
   --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
   --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
+  --sidebar-ring: oklch(0.7 0.2 350);
 }
 
 .dark {
@@ -119,6 +129,13 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -170,3 +187,75 @@
     }
   }
 }
+
+/* Custom utilities for Japanese theme */
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #FFB7C5 0%, #FF69B4 50%, #DC143C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-japanese {
+    background: linear-gradient(135deg, #FFB7C5 0%, #FF69B4 100%);
+  }
+  
+  .shadow-japanese {
+    box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  @keyframes sakuraFall {
+    0% {
+      transform: translateY(-10vh) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  .sakura-petal {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: #FFB7C5;
+    border-radius: 50% 0 50% 0;
+    animation: sakuraFall linear infinite;
+    pointer-events: none;
+    z-index: 9999;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFB7C5;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF69B4;
+}
+
