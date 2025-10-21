@@ -47,7 +47,7 @@ export default function Header() {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white/95 backdrop-blur-sm shadow-md' : 'bg-transparent'
+      scrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-md border-b border-gray-800' : 'bg-transparent'
     }`}>
       <div className="container">
         <div className="flex items-center justify-between h-20">
@@ -88,7 +88,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-20 left-0 right-0 bg-white shadow-lg border-t animate-in slide-in-from-top-5">
+          <div className="md:hidden absolute top-20 left-0 right-0 bg-gray-900 shadow-lg border-t border-gray-800 animate-in slide-in-from-top-5">
             <nav className="flex flex-col p-4 gap-2">
               {navLinks.map((link) => (
                 <button

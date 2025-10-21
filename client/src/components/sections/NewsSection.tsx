@@ -16,7 +16,7 @@ export default function NewsSection() {
   ];
 
   return (
-    <section id="novedades" className="py-20 bg-white">
+    <section id="novedades" className="py-20 bg-gray-800">
       <div className="container">
         <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-5 duration-700">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
