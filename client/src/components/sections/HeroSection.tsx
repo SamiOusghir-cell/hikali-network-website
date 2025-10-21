@@ -27,7 +27,7 @@ export default function HeroSection() {
   return (
     <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-900 to-zinc-900 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-gray-900 to-gray-850 -z-10" />
       
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 text-6xl opacity-20 animate-float">🌸</div>
