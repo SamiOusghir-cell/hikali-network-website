@@ -10,7 +10,7 @@ export default function CommunitySection() {
 
   const discordChannels = [
     { icon: '📢', name: 'anuncios', color: 'text-yellow-600' },
-    { icon: '💬', name: 'chat-general', color: 'text-blue-600' },
+    { icon: '💬', name: 'chat-general', color: 'text-pink-600' },
     { icon: '🎮', name: 'minecraft', color: 'text-green-600' },
     { icon: '🎪', name: 'eventos', color: 'text-purple-600' },
     { icon: '🛠️', name: 'soporte', color: 'text-red-600' },
